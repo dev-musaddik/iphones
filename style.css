@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    display: flex;
+    width:100%;
+    height:70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_section{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    height:50vh;
+    background:rgb(184, 184, 184);
+    /* flex-direction: column;*/
+    justify-content: center; 
+    align-items: center;
+}
+.main_section .colom{
+    display: flex;
+}
+.submain{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 90%;
+    padding:8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(184, 184, 184);
+     /*
+    background-color: red;
+    color:green; */
+}
+/* .main_section .phone_section{
+    display: flex;
+} */
+.main_section .colom .img_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.main_section .colom .phone, .cover{
+    display: flex;
+    width: 100%;
+    /* justify-content: center; */
+    
+}
+.main_section .colom .phone{
+    width: 100%;
+    padding:7px;
+    margin-bottom: 10px;
+    background-color: white;
+   
+    /* justify-content: center; */
+}
+.main_section .colom .cover{
+    width: 100%;
+    /* margin-bottom: 10px; */
+    padding:7px;
+    
+    background-color: rgb(255, 255, 255);
+   
+    /* justify-content: center; */
+}
+.main_section .colom .img_section img{
+ width:60px;
+ height: 80px;
+}
+.main_section .colom .phone_section,.amount_section img{
+    width:20px;
+    height:20px;
+    
+}
+.main_section .phone_section{
+ width: 100%;
+ 
+ display: flex;
+ flex-direction: column;
+ transition: 10s;
+
+}
+
+.main_section .amount_section{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_section .amount_section span{
+    
+    font-weight:bolder;
+    
+
+}
+#mynas_one,#mynas_two,#plus_one,#plus_two,#crose_one,#crose_two{
+    padding: 1px 12px;
+    font-weight: 900;
+    transition: .9s;
+   
+}
+.main_section .amount_section button{
+    border: none;
+    padding: 1px 12px;
+    background-color: rgb(194, 195, 197);
+    width: 20px;
+}
+
+
+
+/* /////////////////total//////////// */
+
+.main_section .submain .total_balance{
+   margin-top: 50px;
+    display: flex;
+    width: 100%;
+   
+    
+    justify-content: space-between;
+    text-align: start;
+    margin-bottom: 10px;
+   
+}
+.main_section .submain .check_out{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 70%;
+    margin-right: 0; 
+    
+}
+.main_section .submain .check_out button{
+width: 85px;
+height: 35px;
+font-weight: 900;
+color: white;
+outline: none;
+border: none;
+/* cursor: pointer; */
+background-color: rgb(23, 163, 11);
+box-shadow:3px 3px 5px 5px rgb(113, 176, 18) ;
+border-radius: 7px;
+transition: .9s;
+}
+.main_section .submain .check_out button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow:3px 3px 5px 5px rgb(70, 70, 69) ;
+}
+
+/* ///////////////done_section////////////////////////// */
+
+#done_section{
+    display: none;
+    width:100%;
+    height:15vh;
+    padding-top:40%;
+    color:rgba(8, 123, 8, 0.943);
+    background-color: rgb(21, 255, 0);
+    box-shadow:5px 5px  10px 15px rgb(115, 162, 96) ;
+
+}
+
+#reset {
+    background: green;
+    color:white;
+    border-radius: 6px;
+    padding:7px;
+    margin-top:20px;
+    font-weight: 900;
+}
+#icon{
+    font-size: 10px;
+   
+}
+
+/* ///////////////////////////it's for javascript//////////////////// */
+#phone_section_refresh_one,#phone_section_refresh_two{
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+#phone_section_refresh_one{
+    width: 100%;
+    padding:7px;
+    margin-bottom: 10px;
+    background-color: white;
+    display: none;
+   
+    /* justify-content: center; */
+}
+#phone_section_refresh_two{
+    width: 100%;
+    /* margin-bottom: 10px; */
+    padding:7px;
+    
+    background-color: rgb(255, 255, 255);
+    display: none;
+    /* justify-content: center; */
+}
+#phone_section_refresh_one button{
+    
+    color:rgb(255, 0, 0);
+  
+    border-radius: 6px;
+    padding:7px;
+    margin-top:20px;
+    font-weight: 900;
+}
+#phone_section_refresh_two button{
+    color:rgb(255, 0, 0);
+  
+    border-radius: 6px;
+    padding:7px;
+    margin-top:20px;
+    font-weight: 900;
+}
