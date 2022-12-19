@@ -118,7 +118,7 @@ document.getElementById('crose_two').addEventListener('click',function(){
 document.getElementById('close_one-ref').addEventListener('click',function(){
     document.getElementById('phone').style.display="flex";
     document.getElementById('phone_section_refresh_one').style.display="none";
-});
+}); 
 document.getElementById('close_two-ref').addEventListener('click',function(){
     document.getElementById('cover').style.display="flex";
     document.getElementById('phone_section_refresh_two').style.display="none";
