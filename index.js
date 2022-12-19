@@ -75,9 +75,15 @@ document.getElementById('plus_two').addEventListener('click',function(){
  function show (){
     var cover_price=parseInt(document.getElementById('cover_price').innerHTML);
 var iPhone_price=parseInt(document.getElementById('iPhone_price').innerHTML);
-var total_price=cover_price+iPhone_price;
-document.getElementById('show_subtotal').innerHTML=total_price;
-
+var sub_total_price=cover_price+iPhone_price;
+     var show_value_iphone=parseInt(document.getElementById('show_value_iphone').innerHTML);
+     var show_value_cover=parseInt(document.getElementById('show_value_cover').innerHTML);
+     show_value_iphone*=12;
+     show_value_cover*=3;
+     var tax =show_value_iphone+show_value_cover;
+     var total_price=sub_total_price+tax;
+document.getElementById('show_subtotal').innerHTML=sub_total_price;
+document.getElementById('show_tax').innerHTML=tax;
 document.getElementById('show_total').innerHTML=total_price;
 }
 
